@@ -5,10 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon lib/server.js"
+    "start": "nodemon lib/server.js",
+    "generateUrls": "node --max-old-space-size=8192 ./tests/generateUrls.js"
   },
   "dependencies": {
     "express": "4.17.1",
+    "newrelic": "^6.13.2",
     "nodemon": "2.0.4",
     "path": "0.12.7"
   },
